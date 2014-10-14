@@ -1,0 +1,195 @@
+\documentclass[10pt]{article}
+%\usepackage{anysize}
+%\papersize{11in}{8.5in}
+%\marginsize{1in}{1in}{.5in}{.5in}
+\textwidth = 6.5 in
+\textheight = 9 in
+\oddsidemargin = 0.0 in
+\evensidemargin = 0.0 in
+\topmargin = -0.5 in
+\headheight = 0.35 in
+\headsep = 0.15 in
+\topskip = 0 in
+\footskip = 0.5 in
+\pagenumbering{arabic}
+\usepackage{setspace}
+\usepackage[usenames]{color}
+\usepackage[fleqn]{amsmath}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{indentfirst}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{ragged2e}
+\usepackage{xspace}
+\usepackage{parskip}
+\usepackage{tabulary}
+\usepackage[normalem]{ulem}
+\usepackage{hyperref}
+\hypersetup{pdfborder={0 0 0}, colorlinks=true, urlcolor=blue, linkcolor=black}
+\usepackage{titlesec}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{ifthen}
+
+\usepackage[round]{natbib}
+\bibliographystyle{evolution}
+
+%% Format headers and footers %%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancy}
+%\lhead{\ifthenelse{\value{page}=1}{}{\sffamily\footnotesize Jamie Oaks}}
+\lhead{\sffamily \emph{\docTitle} \\ Jamie R. Oaks}
+%\chead{\ifthenelse{\value{page}=1}{{\scshape \docTitle} \\ Jamie Richard Oaks}{\sffamily\footnotesize \docTitle}}
+%\rhead{\ifthenelse{\value{page}=1}{}{\sffamily\footnotesize \today}}
+\rhead{\sffamily \today}
+\cfoot{\sffamily\footnotesize Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%% Format section titles %%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand\refname{Peer-reviewed Publications}
+
+\titleformat{\section}[hang]
+    {\large\sffamily\bfseries}
+    {\S\ \thesection.}{.5em}{}[]
+\titlespacing{\section}
+    {0mm}{1.0ex plus .1ex minus .1ex}{-0.5ex}
+
+\titleformat{\subsection}[hang]
+    {\large\sffamily\itshape}
+    {\S\ \thesection.}{.5em}{}[]
+\titlespacing{\subsection}
+    {0mm}{1.0ex plus .1ex minus .1ex}{-0.5ex}
+
+\titleformat{\subsubsection}[runin]
+    {\sffamily\itshape}
+    {\S\ \thesection.}{.5em}{}[.---]
+\titlespacing{\subsubsection}
+    {\parindent}{0pt}{0pt}
+%    {\parindent}{1.0ex plus .1ex minus .1ex}{0pt}
+
+%% Format list environments %%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
+\renewcommand{\labelitemi}{$\circ$}
+
+\newenvironment{myEnumerate}{
+  \begin{enumerate}
+    \setlength{\itemsep}{0.25em}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0.5em}}
+  {\end{enumerate}}
+
+\newenvironment{myItemize}{
+  \begin{itemize}
+    \setlength{\leftskip}{-4mm}
+    \setlength{\itemsep}{0.25em}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0.5em}}
+  {\end{itemize}}
+
+%% Basic formatting and spacing %%%%%%%%%%%%%%%%%%%%%
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0.5em}
+
+%% My functions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\ignore}[1]{}
+\newcommand{\addTail}[1]{\textit{#1}.---}
+\newcommand{\super}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\sub}[1]{\ensuremath{_{\textrm{#1}}}}
+\newcommand{\dC}{\ensuremath{^\circ{\textrm{C}}}}
+\newcommand{\tableSubItem}{\addtolength{\leftskip}{1em} \labelitemi \xspace}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\docTitle}{Teaching Effectiveness\xspace}
+\begin{document}
+% \raggedright
+\singlespacing
+
+%\section*{Teaching Appointments \& Evaluation Comments}
+As a graduate student, I have had the privilege of being a teaching assistant for
+introductory courses in Biostatistics and Genetics.
+For the latter, I was awarded the Kenneth B.\ Armitage Award for Excellence in
+Teaching; an award given by the University of Kansas Division of Biological
+Sciences to an outstanding graduate teaching assistant that is nominated by
+their students.
+Below are a selection of comments from my students from each class.
+
+\begin{multicols}{2}
+% \subsection*{Biology 350---Genetics---Fall 2010}
+\subsection*{Biology 350---Genetics}
+\begin{myItemize}
+\sffamily
+\item ``Thank you so so much for reviews\ldots If you want to be in academics later, you'll be an excellent professor.''
+\item ``He was an awesome TA! Loved his review sessions---very helpful''
+\item ``The instructor presented information \underline{very} well, answered questions clearly and took the time to give thorough reviews for exams.''
+\item ``The instructor always took time to answer questions about homework and went out of his way to help students study for exams in the class.''
+\item ``Jamie was open to questions \& explained things in a way that was easy to understand.''
+\item ``Made hard concepts easy to understand.''
+\item ``Very helpful; often scheduled review sessions on his own time.''
+\item ``Very approachable---had lots of knowledge of material \& explained topics very well.''
+\item ``Jamie was enthusiastic \& helpful.''
+\item ``Really great teacher. Explained things well. Better than the professors.''
+\item ``Instructor explained well, made sure class understood material. Enjoyed the instructor, class was great!''
+\item ``His teaching is good. He is easy to understand.''
+\item ``He was very helpful and made himself very available for questions/reviews.''
+% \end{myItemize}
+
+% \subsection*{Biology 350---Genetics---Spring 2010}
+% \begin{myItemize}
+% \sffamily
+\item ``Jamie is the best TA!''
+\item ``Jamie is one of the best TAs I've had. Very
+helpful \& explains things very well. He never just assumed or
+expected that we knew things\ldots he took the time to explain it.''
+\item ``Jamie is one of the best TAs I've ever had. He explains the subject
+very well, answers questions and always ready to help.''
+\item ``Very clear in his teaching. Very knowledgeable about the material.''
+\item ``Would try several ways to explain topics that were not easily
+understood.''
+\item ``Always helpful, appreciated that he went over homework, and explained things thoroughly.''
+\item ``He explained concepts in simple terms \& was able to clarify questions from lecture.''
+\item ``Very real \& down to earth. Available \& explains concepts well.''
+\item ``I like how Jamie is organized in discussion and also that he explains the material very well.''
+\item ``Course is well organized, interactive. Best instructor ever!''
+\item ``I really enjoyed the class, and I appreciated the help during office hours. Also, very understanding about class conflicts.''
+\item ``He did a good job teaching a class during a difficult time---late in the day when students don't have a long attention span.''
+\item ``Jamie is very helpful \& always responds to students needs promptly.''
+\item ``Very calm, nice \& very helpful.''
+\item ``Jamie is a great TA. Easy to understand, knows his stuff, willing to
+take time and explain topics.''
+\item ``He was responsive to emails \& explained things well.''
+\end{myItemize}
+% \end{multicols}
+
+% \subsection*{Biology 570---Biostatistics---Fall 2009}
+% \begin{multicols}{2}
+\subsection*{Biology 570---Biostatistics}
+\begin{myItemize}
+\sffamily
+\item ``Jamie was really nice and patient with everyone.''
+\item ``Attentive, helpful.''
+\item ``Taught very well.''
+\item ``Easy to talk to, approachable.''
+\item ``Very helpful in lab.''
+\item ``He was very helpful, helped me learn the material, and seemed to care
+about everyone learning and doing well.''
+\item ``Instructor knew the material well.''
+\item ``Willing to meet outside class.''
+\item ``Jamie was really patient and explained things very clearly.''
+\item ``Helpful and knowledgeable TA.''
+\item ``Always willing to go out of his way to help people and make sure
+everyone is on the same page.''
+\item ``Jamie was an excellent TA. Did a great job of explaining.''
+\item ``Lots of office hours making it easy to get help.''
+\item ``He was very helpful and clear.''
+\end{myItemize}
+\end{multicols}
+
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
