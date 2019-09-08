@@ -27,16 +27,42 @@
 \usepackage{parskip}
 \usepackage{tabulary}
 \usepackage[normalem]{ulem}
-\usepackage{hyperref}
-\hypersetup{pdfborder={0 0 0}, colorlinks=true, urlcolor=blue, linkcolor=black}
 \usepackage{titlesec}
 \usepackage{lastpage}
 \usepackage{fancyhdr}
 \usepackage{multicol}
 \usepackage{ifthen}
 
-\usepackage[round]{natbib}
-\bibliographystyle{evolution}
+%% Set up color palettes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Color palette GreenOrange_6 from
+% https://jiffyclub.github.io/palettable/tableau/
+\definecolor{pgreen}     {RGB}{50,162,81}
+\definecolor{porange}    {RGB}{255,127,15}
+\definecolor{pblue}      {RGB}{60,183,204}
+\definecolor{pyellow}    {RGB}{255,217,74}
+\definecolor{pteal}      {RGB}{57,115,124}
+\definecolor{pauburn}    {RGB}{184,90,13}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{mygray}{gray}{0.9}
+
+\usepackage{hyperref}
+\hypersetup{pdfborder={0 0 0},
+            colorlinks=true,
+            % colorlinks=false,
+            urlcolor=pteal,
+            linkcolor=pteal,
+            citecolor=pteal}
+\usepackage{cleveref}
+\crefformat{footnote}{#2\footnotemark[#1]#3}
+
+%\usepackage[round]{natbib}
+%\bibliographystyle{evolution}
+% \usepackage[style=nature]{biblatex}
+\usepackage[bibstyle=bib/joaks-statement,maxcitenames=3,mincitenames=2,backend=biber]{biblatex}
+
+\newrobustcmd*{\shortfullcite}{\AtNextCite{\renewbibmacro{title}{}\renewbibmacro{in:}{}\renewbibmacro{number}{}}\fullcite}
+
+\bibliography{references}
 
 %% Format headers and footers %%%%%%%%%%%%%%%%%%%%
 \pagestyle{fancy}
